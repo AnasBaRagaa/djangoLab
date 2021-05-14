@@ -21,22 +21,6 @@ def index(request):
     return render(request, 'phonebook/index.html', context)
 
 
-def detail(request, contact_id):
-    c = get_object_or_404(Contact, pk=contact_id)
-    return render(request, 'phonebook/detail.html', {'contact': c})
-
-
-class IndexView(generic.ListView):
-    template_name = 'phonebook/index.html'
-    context_object_name = 'contacts_list'
-
-    def get_queryset(self):
-        return Contact.objects.all()
-
-
-class DetailView(generic.DetailView):
-    model = Contact
-    template_name = 'phonebook/detail.html'
 
 
 def register(request):
