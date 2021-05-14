@@ -1,0 +1,16 @@
+{% extends 'phonebook/../base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+
+<h1>Log in</h1>
+<form method="post">{% csrf_token %}
+
+    {{ form|crispy}}
+    <input type="submit" class="btn btn-primary" value="Login">
+</form>
+    <a href="{% url 'register' %}">New user? </a>
+
+{% endblock %}

@@ -1,0 +1,19 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+{%  if contacts_list %}
+    <ul>
+    {% for contact in contacts_list %}
+        <li><a href="{% url 'phonebook:detail' pk=contact.id  %}"> {{ contact.person_name }}</a>
+            <a href="{% url 'phonebook:update_contact' pk=contact.id  %}">update</a>
+            <a href="{% url 'phonebook:delete_contact' pk=contact.id  %}">Delete</a>
+        </li>
+    {% endfor %}
+    </ul>
+
+{% else %}
+    <p>No Contacts Found</p>
+{% endif %}
+
+{% endblock %}

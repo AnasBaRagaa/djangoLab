@@ -1,0 +1,14 @@
+
+{% extends 'phonebook/../base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+
+<h3>{{ title }}</h3>
+<form method="post">{% csrf_token %}
+    <p>Are you sure you want to delete "{{ object }}"?</p>
+    <input type="submit"  class ="btn btn-danger" value="Confirm">
+</form>
+{% endblock %}

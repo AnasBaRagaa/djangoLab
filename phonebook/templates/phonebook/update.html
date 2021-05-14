@@ -1,0 +1,16 @@
+{% extends 'phonebook/../base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Update{% endblock %}
+
+{% block content %}
+
+    <h3> {{ title }}</h3>
+    <form method="post">{% csrf_token %}
+        {{ form|crispy }}
+        <input type="submit" class="btn btn-primary" value="Save">
+    </form>
+
+
+   <a href=" {% url 'phonebook:create_contact' %}"> <h4> Add a Contact</h4> </a>
+{% endblock %}

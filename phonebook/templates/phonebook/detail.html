@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block tittle %}Details{% endblock %}
+{% block content %}
+<h2> {{ contact.person_name }}</h2>
+        <h3> id : {{ contact.id }}</h3>
+
+<h3> Age : {{ contact.person_age }}</h3>
+<h3> Address : {{ contact.person_address }}</h3>
+<h3> Added On : {{ contact.added_on }}</h3>
+    <h3> Owner On : {{ contact.owner }}</h3>
+
+<h3> Entries : </h3>
+
+
+     <ul>
+{% for e in contact.entry_set.all %}
+    <li> {{  e}}</li>
+     <li><a href="{% url 'phonebook:update' pk=e.id %}"> Update</a></li>
+{% endfor %}
+     </ul>
+
+{% endblock %}
