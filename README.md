@@ -10,6 +10,9 @@ Another problem is that the form looks ugly with standard html, so I used django
 I found it also extremely helpful to have your own CBVs base classes for your own customization, for example enforcing login and check if the user is the owner of the record, and extend them for each view needed with minimal code. 
 I am sorry if my explanation is not clear but I put everything is in this Django project, It is based on the last INC lab11&12 and you can go over it and see it in action with the commented code. I am not an expert so not everything is correct. I used multiple sources. Also, this might not helpful for your project but in my case it saved me hundreds  of liens
 
+username = user
+password =x
+
 Note:
 The lab code is inside 'phonebook'
 
