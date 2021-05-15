@@ -13,8 +13,11 @@ I am sorry if my explanation is not clear but I put everything in a Django proje
 Note:
 The lab code is inside 'phonebook'
 
+
 'django_countries' is an   open source package from : https://pypi.org/project/django-countries/
+
 'widget_tweaks' is an   open source package : https://pypi.org/project/django-widget-tweaks/
+
 'crispy_forms'is an   open source package from : https://pypi.org/project/django-crispy-forms/#description
     
 
