@@ -10,3 +10,11 @@ Another problem is that the form looks ugly with standard html, so I used django
 I found also extremely helpful to have your own CBVs base classes for your own customization, for example enforcing login and check if the user is the owner of the record, and extend them for each view needed with minimal code. 
 I am sorry if my explanation is not clear but I put everything in a Django project based on the last lab and you can go over it and see it in action with the commented code. I am not an expert so not everything is correct. I used multiple sources. Also, this might not helpful for your project but in my case it saved me hundreds  of liens
 
+Note:
+The lab code is inside 'phonebook'
+
+'django_countries' is an   open source package from : https://pypi.org/project/django-countries/
+'widget_tweaks' is an   open source package : https://pypi.org/project/django-widget-tweaks/
+'crispy_forms'is an   open source package from : https://pypi.org/project/django-crispy-forms/#description
+    
+
